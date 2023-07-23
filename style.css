@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 31%,
+    rgba(137, 156, 204, 1) 74%,
+    rgba(101, 149, 205, 1) 93%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .music_container {
+  width: 350px;
+  /* height: 480px; */
+  /* background: white; */
+  /* background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 31%,
+    rgba(137, 156, 204, 1) 74%,
+    rgba(101, 149, 205, 1) 93%
+  ); */
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.main .music_container h1 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px #000000;
+  padding-bottom: 15px;
+}
+
+.main .music_container h2 {
+  letter-spacing: 2px;
+  opacity: 0.4;
+}
+
+.music_container .music_img {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.music_container .music_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);
+}
+
+.music_container .music_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.music_container .music_btns i {
+  cursor: pointer;
+}
+
+.music_container .music_btns .play {
+  background: #000;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 50%;
+  transition: all 0.4s linear;
+}
+
+.music_container .music_btns .play:hover {
+  background: white;
+  color: black;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* animation */
+.anime {
+  animation: rotateimg 4s linear infinite;
+}
+
+@keyframes rotateimg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* progress bar start */
+.progress_container {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  /* margin-top: 1px; */
+}
+
+.progress_container .progress_duration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.progress_div {
+  width: 100%;
+  height: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  position: relative;
+  margin-top: 5px;
+  transition: width 0.5s linear;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: black;
+  border-radius: 20px;
+  cursor: pointer;
+  /* transition: width 0.5s linear; */
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* progress bar end */

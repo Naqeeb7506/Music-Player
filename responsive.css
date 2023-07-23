@@ -1,0 +1,43 @@
+@media screen and (max-width: 400px) {
+  .main .music_container {
+    width: 280px;
+  }
+  .main .music_container h1 {
+    font-size: 28px;
+  }
+  .main .music_container h2 {
+    font-size: 20px;
+  }
+  .music_container .music_img {
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+  }
+  .music_container .music_btns {
+    gap: 50px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .main .music_container {
+    width: 220px;
+  }
+  .main .music_container h1 {
+    font-size: 25px;
+  }
+  .main .music_container h2 {
+    font-size: 15px;
+  }
+  .music_container .music_img {
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+  }
+  .music_container .music_btns {
+    gap: 20px;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+}
